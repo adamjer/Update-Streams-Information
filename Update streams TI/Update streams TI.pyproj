@@ -1,0 +1,67 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a769b94d-81da-4587-87cd-9de55354d809</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Update_streams_TI.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Update streams TI</Name>
+    <RootNamespace>Update streams TI</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.8</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Update_streams_TI.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archives\" />
+    <Folder Include="OGL Streams\" />
+    <Folder Include="Vulkan Streams\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OGL Streams\11.json" />
+    <Content Include="OGL Streams\12.json" />
+    <Content Include="OGL Streams\13.json" />
+    <Content Include="OGL Streams\10.json" />
+    <Content Include="OGL Streams\9.json" />
+    <Content Include="OGL Streams\8.json" />
+    <Content Include="OGL Streams\7.json" />
+    <Content Include="OGL Streams\6.json" />
+    <Content Include="OGL Streams\5.json" />
+    <Content Include="OGL Streams\4.json" />
+    <Content Include="OGL Streams\3.json" />
+    <Content Include="OGL Streams\2.json" />
+    <Content Include="Vulkan Streams\8.json" />
+    <Content Include="Vulkan Streams\7.json" />
+    <Content Include="Vulkan Streams\6.json" />
+    <Content Include="Vulkan Streams\5.json" />
+    <Content Include="Vulkan Streams\4.json" />
+    <Content Include="Vulkan Streams\3.json" />
+    <Content Include="Vulkan Streams\2.json" />
+    <Content Include="Vulkan Streams\1.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
