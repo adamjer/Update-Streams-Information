@@ -191,7 +191,7 @@ def load_file(file, credentials):
 					with open(Path(f"Archives/{stream['name'].strip()}.zip"), "wb") as f:
 						for chunk in artifactoryWebResponse.iter_content(chunk_size = 500 * 1000 * 1024): #chunks 500MB
 							f.write(chunk)
-				except:
+				except Exception as e:
 					print(f"\tERROR: Couldn't save file to disk!")
 					continue
 
