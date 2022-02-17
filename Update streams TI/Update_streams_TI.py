@@ -135,8 +135,10 @@ def load_file(file, credentials):
 	login = credentials[0]
 	password = credentials[1]
 
+	counter = -1
 	for stream in streams["RESULT"]:
-		print(f"STREAM: {stream['name']}")
+		counter += 1
+		print(f"STREAM[{counter}]: {stream['name']}")
 		#choose resource
 		for resource in stream["resources"]:
 									 #SCATE2                              GITS2                                ABN-Trace                            GITS
