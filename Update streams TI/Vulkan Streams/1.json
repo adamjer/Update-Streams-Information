@@ -1,43 +1,22 @@
 {
     "RESULT": [{
-            "id": "9723354",
-            "key": "3513d69d-1e3b-4045-b2fb-70ed2b740407",
-            "version": 7,
-            "name": "vkdx11_shadow-of-mordor_ab-default-g5_win-dg2-512_f00354-00356-s1ref1",
+            "id": "9728357",
+            "key": "7e5a6886-e73b-4039-892b-4c0f06774d76",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c5",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:02.020000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/shadow-of-mordor\/ab-default-g5\/win-bdw\/f00354-00356-s1ref1",
-            "itemId": "TI-2728896",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c5",
+            "itemId": "TI-2689452",
             "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_shadow-of-mordor_ab-default-g5_win-bdw_f00354-00356-s1ref1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c5",
                     "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_shadow-of-mordor_ab-default-g5_win-bdw_f00354-00356-s1ref1",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c5",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -70,38 +49,24 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "ShadowOfMordor.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "ShadowOfMordor.exe",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
+                    "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -112,9 +77,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "Middle-earth: Shadow of Mordor",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "Middle-earth: Shadow of Mordor",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -124,7 +110,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143892",
+                    "itemId": "RES-141465",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -139,41 +125,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723355",
-            "key": "7529351e-e390-4b8f-ba70-ee2ea2017f25",
-            "version": 7,
-            "name": "vkdx11_shadow-of-mordor_ab-default-g5_win-dg2-512_f00355",
+            "id": "9728358",
+            "key": "7531f98e-3102-4ca4-85b7-54e6b1a8c639",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c50",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:02.020000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/shadow-of-mordor\/ab-default-g5\/win-bdw\/f00355",
-            "itemId": "TI-2728897",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c50",
+            "itemId": "TI-2689453",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c50",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c50",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -185,13 +157,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -199,10 +164,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -213,37 +178,23 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "ShadowOfMordor.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "ShadowOfMordor.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_shadow-of-mordor_ab-default-g5_win-bdw_f00355",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_shadow-of-mordor_ab-default-g5_win-bdw_f00355",
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -255,9 +206,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "Middle-earth: Shadow of Mordor",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "Middle-earth: Shadow of Mordor",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -267,7 +239,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143891",
+                    "itemId": "RES-141466",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -282,41 +254,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723368",
-            "key": "5bcdc953-e74d-453c-b0e3-727e09812dc8",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt4-performance-deferred-nvidia_win-dg2-512_f00066",
+            "id": "9728359",
+            "key": "a823e068-6d26-48f4-a9b8-6ca37ea96139",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c51",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt4-performance-deferred-nvidia\/win-dg2-512\/f00066",
-            "itemId": "TI-2736317",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c51",
+            "itemId": "TI-2689454",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c51",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c51",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -328,13 +286,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -342,10 +293,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -356,30 +307,23 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt4-performance-deferred-nvidia_win-dg2-512_f00066",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt4-performance-deferred-nvidia_win-dg2-512_f00066",
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -391,16 +335,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11Workload1.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -410,7 +368,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-144002",
+                    "itemId": "RES-141467",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -425,41 +383,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723369",
-            "key": "c9ce8b88-ab8d-4fd8-9889-12f272c836a1",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt3-performance-deferred-nvidia_win-dg2-512_f00644",
+            "id": "9728360",
+            "key": "a3404b6e-e78c-4c82-9cc9-c9cacf26cc85",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c52",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt3-performance-deferred-nvidia\/win-dg2-512\/f00644",
-            "itemId": "TI-2736318",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c52",
+            "itemId": "TI-2689455",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c52",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c52",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -471,13 +415,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -485,10 +422,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -499,30 +436,23 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt3-performance-deferred-nvidia_win-dg2-512_f00644",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt3-performance-deferred-nvidia_win-dg2-512_f00644",
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -534,16 +464,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11Workload1.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -553,7 +497,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-144000",
+                    "itemId": "RES-141468",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -568,41 +512,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723370",
-            "key": "b947ffcd-5358-42c2-a404-1d60cbeed6aa",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt2-performance-deferred-nvidia_win-dg2-512_f00402",
+            "id": "9728361",
+            "key": "7671b65b-047b-42c6-8a56-8725d6978a91",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c53",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt2-performance-deferred-nvidia\/win-dg2-512\/f00402",
-            "itemId": "TI-2736319",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c53",
+            "itemId": "TI-2689456",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c53",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c53",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -614,13 +544,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -628,10 +551,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -642,30 +565,23 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt2-performance-deferred-nvidia_win-dg2-512_f00402",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt2-performance-deferred-nvidia_win-dg2-512_f00402",
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -677,16 +593,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11Workload1.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -696,7 +626,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143998",
+                    "itemId": "RES-141469",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -711,41 +641,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723371",
-            "key": "a5a4b29f-ccd6-450d-a806-560b57b4d19a",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt1-performance-deferred-nvidia_win-dg2-512_f00087",
+            "id": "9728544",
+            "key": "8020c564-3ffd-4842-894f-8053e67c72db",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c54",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt1-performance-deferred-nvidia\/win-dg2-512\/f00087",
-            "itemId": "TI-2736320",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c54",
+            "itemId": "TI-2689457",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c54",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c54",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -757,13 +673,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -771,10 +680,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -785,51 +694,51 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt1-performance-deferred-nvidia_win-dg2-512_f00087",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt1-performance-deferred-nvidia_win-dg2-512_f00087",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11Workload1.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11",
+                    "value": "Red Dead Redemption 2",
                     "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
+                    "resolvedValue": "Red Dead Redemption 2",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "2048x8192",
+                    "name": "gta.planning.item.resolution",
+                    "resolvedValue": "2048x8192",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -839,7 +748,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143996",
+                    "itemId": "RES-141470",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -854,41 +763,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723356",
-            "key": "da700bab-1b7e-4aa4-a96d-332e2906bc88",
-            "version": 3,
-            "name": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt1-fixedframe-120_win-dg2-512_f02164",
+            "id": "9728362",
+            "key": "f94b1d23-dc69-4ff6-b2aa-d1bd3d3d7426",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c55",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-fire-strike\/2.11.6911-2020.07.30\/ab-default-gt1-fixedframe-120\/win-dg2-512\/f02164",
-            "itemId": "TI-2736330",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c55",
+            "itemId": "TI-2689458",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c55",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c55",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -900,13 +795,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -914,10 +802,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -928,30 +816,23 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt1-fixedframe-120_win-dg2-512_f02164",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt1-fixedframe-120_win-dg2-512_f02164",
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -963,16 +844,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -982,7 +877,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143994",
+                    "itemId": "RES-141471",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -997,41 +892,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723357",
-            "key": "5485dbf2-9c6f-41b9-924f-4bcbe3ef1bde",
-            "version": 3,
-            "name": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt2-ootb_win-dg2-512_f00033",
+            "id": "9728545",
+            "key": "dbe63c15-e79b-45eb-bbcd-a81a636697f1",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c56",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-2-3-3663\/ab-firestrike-gt2-ootb\/win-dg2-512\/f00033",
-            "itemId": "TI-2736331",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c56",
+            "itemId": "TI-2689459",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c56",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c56",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1043,13 +924,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -1057,10 +931,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -1071,51 +945,51 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt2-ootb_win-dg2-512_f00033",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt2-ootb_win-dg2-512_f00033",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark",
+                    "value": "Red Dead Redemption 2",
                     "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
+                    "resolvedValue": "Red Dead Redemption 2",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "2048x8192",
+                    "name": "gta.planning.item.resolution",
+                    "resolvedValue": "2048x8192",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1125,7 +999,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143992",
+                    "itemId": "RES-141472",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -1140,41 +1014,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723358",
-            "key": "5764acaf-b218-4e8c-a592-238dca5557f3",
-            "version": 3,
-            "name": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt1-ootb_win-dg2-512_f00071",
+            "id": "9728363",
+            "key": "323f1e1a-22a3-47bf-8f84-73d7f425b76a",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c57",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-2-3-3663\/ab-firestrike-gt1-ootb\/win-dg2-512\/f00071",
-            "itemId": "TI-2736332",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c57",
+            "itemId": "TI-2689460",
             "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c57",
+                    "name": "test_trace.test_params.test_name",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c57",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1186,13 +1046,6 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
                     "value": "281",
                     "name": "test_trace.test_tool",
                     "resolvedValue": "ABN",
@@ -1200,10 +1053,10 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "628",
+                    "name": "test_trace.test_type",
+                    "resolvedValue": "Functional",
+                    "typeId": 40,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -1214,30 +1067,23 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt1-ootb_win-dg2-512_f00071",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt1-ootb_win-dg2-512_f00071",
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1249,16 +1095,30 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
+                    "value": "1",
+                    "name": "test_trace.test_params.tolerance",
+                    "resolvedValue": "1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
+                    "prefixForParameters": null
+                }, {
+                    "value": "RDR2.exe",
+                    "name": "test_trace.test_params.recorder_app_original_exe_name",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1268,7 +1128,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143990",
+                    "itemId": "RES-141473",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -1283,55 +1143,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723372",
-            "key": "245c3524-4d76-4262-96f6-ccda53676da3",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt4-performance-deferred-nvidia_win-dg2-512_f00065-00067-s1ref1",
+            "id": "9728546",
+            "key": "3d876fa1-c005-4370-abf0-56e620431f40",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c58",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt4-performance-deferred-nvidia\/win-dg2-512\/f00065-00067-s1ref1",
-            "itemId": "TI-2736340",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c58",
+            "itemId": "TI-2689461",
             "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt4-performance-deferred-nvidia_win-dg2-512_f00065-00067-s1ref1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c58",
                     "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt4-performance-deferred-nvidia_win-dg2-512_f00065-00067-s1ref1",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c58",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1364,51 +1196,51 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
+                    "typeId": 0,
+                    "unit": null,
+                    "prefixForParameters": null
+                }, {
+                    "value": "2048x8192",
+                    "name": "gta.planning.item.resolution",
+                    "resolvedValue": "2048x8192",
+                    "typeId": 0,
+                    "unit": null,
                     "prefixForParameters": null
                 }, {
                     "value": "1",
-                    "name": "test_trace.test_params.frames_count",
+                    "name": "test_trace.test_params.tolerance",
                     "resolvedValue": "1",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
+                    "value": "21600",
+                    "name": "Timeout",
+                    "resolvedValue": "21600",
+                    "typeId": 38,
+                    "unit": "s",
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11Workload1.exe",
+                    "value": "RDR2.exe",
                     "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1418,7 +1250,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-144001",
+                    "itemId": "RES-141474",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -1433,55 +1265,27 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }, {
-            "id": "9723373",
-            "key": "7b6030a2-3f14-4daf-9e9d-f1cf912689f4",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt3-performance-deferred-nvidia_win-dg2-512_f00643-00645-s1ref1",
+            "id": "9728364",
+            "key": "34ebe79d-32a6-4a6b-9cf7-438ea84c9d34",
+            "version": 15,
+            "name": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c59",
             "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
+            "namespace": "Render\/Test\/Scate\/Vulkan",
             "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
+            "startDate": "2022-02-17T11:02:05.707000Z",
             "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
+            "ownerIdsid": "tomaszdx",
             "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt3-performance-deferred-nvidia\/win-dg2-512\/f00643-00645-s1ref1",
-            "itemId": "TI-2736341",
+            "arguments": "vulkan\/red-dead-redemption-2\/1436.28-2021.12.01\/ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk\/win-tgl\/f02408-cmdb\/21175-0-c59",
+            "itemId": "TI-2689462",
             "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt3-performance-deferred-nvidia_win-dg2-512_f00643-00645-s1ref1",
+                    "value": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c59",
                     "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt3-performance-deferred-nvidia_win-dg2-512_f00643-00645-s1ref1",
+                    "resolvedValue": "vulkan_red-dead-redemption-2_1436.28-2021.12.01_ab-g6-benchmark-robbery-hbm-async-transfer-queue-vdk_win-tgl_f02408-cmdb_21175-0-c59",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1514,31 +1318,24 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
+                    "value": "captureVulkanSubmits",
+                    "name": "test_trace.test_params.capture_mode",
+                    "resolvedValue": "captureVulkanSubmits",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
+                    "value": "1-60000:1",
+                    "name": "test_trace.test_params.capture_range",
+                    "resolvedValue": "1-60000:1",
+                    "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
+                    "value": "Red Dead Redemption 2",
+                    "name": "gta.planning.item.applicationName",
+                    "resolvedValue": "Red Dead Redemption 2",
+                    "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
                 }, {
@@ -1549,75 +1346,9 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "3DMark11Workload1.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-143999",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723374",
-            "key": "130d0ba4-e7e6-4439-838c-4d0a76764734",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt2-performance-deferred-nvidia_win-dg2-512_f00401-00403-s1ref1",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt2-performance-deferred-nvidia\/win-dg2-512\/f00401-00403-s1ref1",
-            "itemId": "TI-2736342",
-            "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
+                    "value": "False",
+                    "name": "test_trace.test_params.compare_output",
+                    "resolvedValue": "False",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1629,86 +1360,16 @@
                     "unit": null,
                     "prefixForParameters": null
                 }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt2-performance-deferred-nvidia_win-dg2-512_f00401-00403-s1ref1",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt2-performance-deferred-nvidia_win-dg2-512_f00401-00403-s1ref1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "300000",
+                    "value": "21600",
                     "name": "Timeout",
-                    "resolvedValue": "300000",
+                    "resolvedValue": "21600",
                     "typeId": 38,
                     "unit": "s",
                     "prefixForParameters": null
                 }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11Workload1.exe",
+                    "value": "RDR2.exe",
                     "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
+                    "resolvedValue": "RDR2.exe",
                     "typeId": 0,
                     "unit": null,
                     "prefixForParameters": null
@@ -1718,7 +1379,7 @@
             "tags": [],
             "resources": [{
                     "name": null,
-                    "itemId": "RES-143997",
+                    "itemId": "RES-141475",
                     "plugin": null,
                     "isDeleted": false
                 }, {
@@ -1733,914 +1394,14 @@
                     "isDeleted": false
                 }
             ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723375",
-            "key": "7cd1b19f-c388-4750-b6f0-616986bd1fa5",
-            "version": 3,
-            "name": "vkdx11_3dmark11-132_ab-gt1-performance-deferred-nvidia_win-dg2-512_f00086-00088-s1ref1",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:43.170000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark11-132\/ab-gt1-performance-deferred-nvidia\/win-dg2-512\/f00086-00088-s1ref1",
-            "itemId": "TI-2736343",
-            "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark11-132_ab-gt1-performance-deferred-nvidia_win-dg2-512_f00086-00088-s1ref1",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark11-132_ab-gt1-performance-deferred-nvidia_win-dg2-512_f00086-00088-s1ref1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11Workload1.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMark11Workload1.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark11",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark11",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-143995",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723359",
-            "key": "5bf61b3e-e0db-4185-8cc7-7342ca4e63af",
-            "version": 3,
-            "name": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt1-fixedframe-120_win-dg2-512_f02163-02165-s1ref1",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-fire-strike\/2.11.6911-2020.07.30\/ab-default-gt1-fixedframe-120\/win-dg2-512\/f02163-02165-s1ref1",
-            "itemId": "TI-2736344",
-            "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt1-fixedframe-120_win-dg2-512_f02163-02165-s1ref1",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt1-fixedframe-120_win-dg2-512_f02163-02165-s1ref1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-143993",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723360",
-            "key": "971df6fd-bc7e-4e53-b318-60f0494e049f",
-            "version": 3,
-            "name": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt2-ootb_win-dg2-512_f00032-00034-s1ref1",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-2-3-3663\/ab-firestrike-gt2-ootb\/win-dg2-512\/f00032-00034-s1ref1",
-            "itemId": "TI-2736345",
-            "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt2-ootb_win-dg2-512_f00032-00034-s1ref1",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt2-ootb_win-dg2-512_f00032-00034-s1ref1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-143991",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723361",
-            "key": "36a5c40c-c949-4b6a-ab03-9322c0be1c81",
-            "version": 3,
-            "name": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt1-ootb_win-dg2-512_f00070-00072-s1ref1",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-2-3-3663\/ab-firestrike-gt1-ootb\/win-dg2-512\/f00070-00072-s1ref1",
-            "itemId": "TI-2736346",
-            "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt1-ootb_win-dg2-512_f00070-00072-s1ref1",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-2-3-3663_ab-firestrike-gt1-ootb_win-dg2-512_f00070-00072-s1ref1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-143989",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723362",
-            "key": "a92c9cc1-3e25-4b68-8d6f-bdcfeed76e3f",
-            "version": 3,
-            "name": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt2-fixedframe-120_win-dg2-512_f00479-00481-s1ref1",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/1ref1",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-fire-strike\/2.11.6911-2020.07.30\/ab-default-gt2-fixedframe-120\/win-dg2-512\/f00479-00481-s1ref1",
-            "itemId": "TI-2736535",
-            "attributes": [{
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "2",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt2-fixedframe-120_win-dg2-512_f00479-00481-s1ref1",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt2-fixedframe-120_win-dg2-512_f00479-00481-s1ref1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "300000",
-                    "name": "Timeout",
-                    "resolvedValue": "300000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "Test Tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-144008",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
-            "whiteList": null,
-            "blackList": null
-        }, {
-            "id": "9723363",
-            "key": "91c0533c-d43b-4fab-8f0d-52c13ab5bc6e",
-            "version": 3,
-            "name": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt2-fixedframe-120_win-dg2-512_f00480",
-            "description": null,
-            "namespace": "Render\/Test\/Scate\/Vulkan\/subcapture",
-            "type": "testitem",
-            "startDate": "2022-02-16T16:44:25.097000Z",
-            "endDate": "9999-01-01T00:00:00Z",
-            "ownerIdsid": "ajerecze",
-            "plugin": "test_trace",
-            "arguments": "vkdx11\/3dmark-fire-strike\/2.11.6911-2020.07.30\/ab-default-gt2-fixedframe-120\/win-dg2-512\/f00480",
-            "itemId": "TI-2736536",
-            "attributes": [{
-                    "value": "200000",
-                    "name": "Timeout",
-                    "resolvedValue": "200000",
-                    "typeId": 38,
-                    "unit": "s",
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.tolerance",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "x64",
-                    "name": "test_trace.test_params.recorder_tool_bit_version",
-                    "resolvedValue": "x64",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "628",
-                    "name": "test_trace.test_type",
-                    "resolvedValue": "Functional",
-                    "typeId": 40,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "281",
-                    "name": "test_trace.test_tool",
-                    "resolvedValue": "ABN",
-                    "typeId": 25,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1945",
-                    "name": "Workload Source",
-                    "resolvedValue": "Trace",
-                    "typeId": 72,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "2182",
-                    "name": "Component",
-                    "resolvedValue": "VK Apps",
-                    "typeId": 17,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_step",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frame_start",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "1",
-                    "name": "test_trace.test_params.frames_count",
-                    "resolvedValue": "1",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt2-fixedframe-120_win-dg2-512_f00480",
-                    "name": "test_trace.test_params.test_name",
-                    "resolvedValue": "vkdx11_3dmark-fire-strike_2.11.6911-2020.07.30_ab-default-gt2-fixedframe-120_win-dg2-512_f00480",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3840x2160",
-                    "name": "gta.planning.item.resolution",
-                    "resolvedValue": "3840x2160",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMarkICFWorkload.exe",
-                    "name": "test_trace.test_params.recorder_app_original_exe_name",
-                    "resolvedValue": "3DMarkICFWorkload.exe",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }, {
-                    "value": "3DMark",
-                    "name": "gta.planning.item.applicationName",
-                    "resolvedValue": "3DMark",
-                    "typeId": 0,
-                    "unit": null,
-                    "prefixForParameters": null
-                }
-            ],
-            "planningAttributes": [],
-            "tags": [],
-            "resources": [{
-                    "name": null,
-                    "itemId": "RES-144009",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "plugin": null,
-                    "isDeleted": false
-                }, {
-                    "name": null,
-                    "itemId": "RES-3111",
-                    "plugin": null,
-                    "isDeleted": false
-                }
-            ],
-            "resourcesVersions": [{
-                    "name": null,
-                    "itemId": "RES-3170",
-                    "version": "ABN-v2.4.531",
-                    "isDeleted": false,
-                    "isResourceDeleted": false
-                }
-            ],
+            "resourcesVersions": [],
             "whiteList": null,
             "blackList": null
         }
     ],
     "metadata": {
-        "timestamp": "2022-02-16T17:35:24.930334Z",
-        "requestId": "cf88fe32-927c-4ae2-b768-c6fe113cdf4a",
-        "totalCount": 18
+        "timestamp": "2022-02-17T13:13:22.790846Z",
+        "requestId": "66843e33-74ed-4e0a-908e-c05b616e7c1c",
+        "totalCount": 11
     }
 }

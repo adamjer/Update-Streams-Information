@@ -11,6 +11,9 @@ from PIL import Image
 import shutil
 from getpass import getpass
 
+class NoResolutionFound(Exception):
+    """Base class for other exceptions"""
+    pass
 
 def selectNewestArtifact(artifacts):
 	result = None
@@ -29,7 +32,7 @@ def selectGoldens(artifact):
 			references.append(reference)
 
 	for result in references:
-		if result["name"] == "reference_screenshots_for-common":
+		if "for-common" in result["name"]:
 			return result
 
 	if references:
@@ -46,6 +49,7 @@ def getArchiveName(artifactoryContent):
 def getResolutions(path):
 	resolutions = dict()
 	for golden in os.listdir(path):
+		im = None
 		try:
 			im = Image.open(Path(path, golden), "r")
 			res = im.size
@@ -53,11 +57,14 @@ def getResolutions(path):
 				resolutions[res] = 1
 			else:
 				resolutions[res] = resolutions[res] + 1
-		except:
-			print("\tINFO: Goldens archive contain files that are not images!")
+		except Exception as e:
+			print(f"\tINFO: {e}")
 		finally:
-			im.close()
+			if im:
+				im.close()
 		
+	if not resolutions:
+		raise NoResolutionFound
 
 	result = ""
 	resolutionKeys = resolutions.keys()
@@ -146,11 +153,20 @@ def load_file(file, credentials):
 				opener = urllib.request.build_opener(handler)
 				urllib.request.install_opener(opener)
 
+
 				try:
 					resourceWebResponse = urllib.request.urlopen(request)
 					response = json.loads(resourceWebResponse.read())
 				except:
 					print(f"\tERROR: Couldn't get stream's {stream['name']} resource {resource['itemId']} info")
+					continue
+
+				request = urllib.request.Request(url=f"http://gta.intel.com/api/tp/v1/testitems/{stream['itemId']}", method="GET")
+				try:
+					testItemWebResponse = urllib.request.urlopen(request)
+					testItem = json.loads(testItemWebResponse.read())
+				except:
+					print(f"\tERROR: Couldn't get stream's TI {stream['name'].strip()} stream['testId'] info")
 					continue
 
 				artifact = selectNewestArtifact(response)
@@ -161,6 +177,7 @@ def load_file(file, credentials):
 				goldens = selectGoldens(artifact)
 				if not goldens:
 					print(f"\tERROR: No goldens found for Resource:{resource['itemId']} Artifact:{artifact['itemId']} {artifact['name']}")
+					handleAttributes(stream, "no goldens resource", testItem, credentials)
 					continue
 
 				request = urllib.request.Request(url=f"http://gfx-assets.igk.intel.com/artifactory/{goldens['buildName']}", method="GET")
@@ -206,21 +223,15 @@ def load_file(file, credentials):
 
 				try:
 					resolutions = getResolutions(Path(f"Archives/{stream['name'].strip()}"))
-				except:
+				except NoResolutionFound:
 					print("\tERROR: Couldn't get resolutions from goldens!")
+					handleAttributes(stream, "no goldens", testItem, credentials)
 					continue
+
 				try:
 					shutil.rmtree(Path(f"Archives/{stream['name'].strip()}"))
 				except:
 					print("\tERROR: Deletion of unzipped goldens failed!")
-
-				request = urllib.request.Request(url=f"http://gta.intel.com/api/tp/v1/testitems/{stream['itemId']}", method="GET")
-				try:
-					testItemWebResponse = urllib.request.urlopen(request)
-					testItem = json.loads(testItemWebResponse.read())
-				except:
-					print(f"\tERROR: Couldn't get stream's TI {stream['name'].strip()} stream['testId'] info")
-					continue
 
 				handleAttributes(stream, resolutions, testItem, credentials)
 
