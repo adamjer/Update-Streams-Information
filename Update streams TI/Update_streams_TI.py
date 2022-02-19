@@ -11,6 +11,7 @@ from PIL import Image
 import shutil
 from getpass import getpass
 
+
 class NoResolutionFound(Exception):
     """Base class for other exceptions"""
     pass
@@ -32,7 +33,9 @@ def selectGoldens(artifact):
 			references.append(reference)
 
 	for result in references:
-		if "for-common" in result["name"]:
+		if "reference_screenshots_for-common" in result["name"]:
+			return result
+		if "reference_screenshots" in result["name"]:
 			return result
 
 	if references:
@@ -137,8 +140,10 @@ def load_file(file, credentials):
 
 	counter = -1
 	for stream in streams["RESULT"]:
+		global global_counter
+		global_counter += 1
 		counter += 1
-		print(f"STREAM[{counter}]: {stream['name']}")
+		print(f"STREAM[{global_counter}] {file.name}[{counter}]: {stream['name']}")
 		#choose resource
 		for resource in stream["resources"]:
 									 #SCATE2                              GITS2                                ABN-Trace                            GITS
@@ -248,6 +253,8 @@ def inputCredentials():
 def load_files(path):
 	credentials = inputCredentials()
 	files = os.listdir(Path(path))
+	global global_counter
+	global_counter = -1
 	for file in files:
 		load_file(Path(path ,file), credentials)
 
