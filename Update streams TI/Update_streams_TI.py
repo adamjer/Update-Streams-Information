@@ -16,6 +16,10 @@ class NoResolutionFound(Exception):
     """Base class for other exceptions"""
     pass
 
+class NoGoldensResourceFound(Exception):
+    """Base class for other exceptions"""
+    pass
+
 def selectNewestArtifact(artifacts):
 	result = None
 	for artifact in artifacts:
@@ -35,7 +39,17 @@ def selectGoldens(artifact):
 	for result in references:
 		if "reference_screenshots_for-common" in result["name"]:
 			return result
+
+	for result in references:
 		if "reference_screenshots" in result["name"]:
+			return result
+
+	for result in references:
+		if "reference_resources_for-common" in result["name"]:
+			return result
+
+	for result in references:
+		if "reference_resources" in result["name"]:
 			return result
 
 	if references:
@@ -146,8 +160,8 @@ def load_file(file, credentials):
 		print(f"STREAM[{global_counter}] {file.name}[{counter}]: {stream['name']}")
 		#choose resource
 		for resource in stream["resources"]:
-									 #SCATE2                              GITS2                                ABN-Trace                            GITS
-			if resource["itemId"] != "RES-3106" and resource["itemId"] != "RES-3111" and resource["itemId"] != "RES-3170" and resource["itemId"] != "RES-3110":
+									      #SCATE2     GITS2       ABN-Trace   GITS        GfxBench DXVK
+			if resource["itemId"] not in ["RES-3106", "RES-3111", "RES-3170", "RES-3110", "RES-143632"]:
 				#resourceLink =
 				#"http://gta.intel.com/api/res-mngr/resources/{}/versions".format(resource["itemId"])
 				request = urllib.request.Request(url="http://gta.intel.com/api/res-mngr/resources/{}/versions".format(resource["itemId"]), method="GET")
@@ -181,8 +195,9 @@ def load_file(file, credentials):
 					print(f"\tERROR: No artifacts for Resource:{resource['itemId']} Artifact:{artifact['itemId']} {artifact['name']}")
 					continue
 
-				goldens = selectGoldens(artifact)
-				if not goldens:
+				try:
+					goldens = selectGoldens(artifact)
+				except NoGoldensResourceFound:
 					print(f"\tERROR: No goldens found for Resource:{resource['itemId']} Artifact:{artifact['itemId']} {artifact['name']}")
 					handleAttributes(stream, "no goldens resource", testItem, credentials)
 					continue
