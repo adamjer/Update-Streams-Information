@@ -54,7 +54,7 @@ def selectGoldens(artifact):
 
 	if references:
 		return references[0]
-	return references
+	raise NoGoldensResourceFound
 
 def getArchiveName(artifactoryContent):
 	for line in artifactoryContent:
