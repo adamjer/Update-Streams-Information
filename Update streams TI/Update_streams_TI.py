@@ -20,6 +20,10 @@ class NoGoldensResourceFound(Exception):
     """Base class for other exceptions"""
     pass
 
+class NoTraceResourceFound(Exception):
+    """Base class for other exceptions"""
+    pass
+
 def selectNewestArtifact(artifacts):
 	result = None
 	for artifact in artifacts:
@@ -55,6 +59,16 @@ def selectGoldens(artifact):
 	if references:
 		return references[0]
 	raise NoGoldensResourceFound
+
+def selectTrace(artifact):
+	traces = []
+	for trace in artifact["artifactVersions"]:
+		if "trace" in trace["name"] and "manifest" not in trace["name"]:
+			traces.append(trace)
+
+	if traces:
+		return traces[0]
+	raise NoTraceResourceFound
 
 def getArchiveName(artifactoryContent):
 	for line in artifactoryContent:
@@ -155,13 +169,14 @@ def load_file(file, credentials):
 	counter = -1
 	for stream in streams["RESULT"]:
 		global global_counter
+		global global_results
 		global_counter += 1
 		counter += 1
-		print(f"STREAM[{global_counter}] {file.name}[{counter}]: {stream['name']}")
+		print(f'STREAM[{global_counter}] {stream["name"]}')
 		#choose resource
 		for resource in stream["resources"]:
-									      #SCATE2     GITS2       ABN-Trace   GITS        GfxBench DXVK
-			if resource["itemId"] not in ["RES-3106", "RES-3111", "RES-3170", "RES-3110", "RES-143632"]:
+									      #SCATE2     GfxBench    GITS2       ABN-Trace   GITS        GfxBench DXVK GPA
+			if resource["itemId"] not in ["RES-3106", "RES-3109", "RES-3111", "RES-3170", "RES-3110", "RES-143632", "RES-134481"]:
 				#resourceLink =
 				#"http://gta.intel.com/api/res-mngr/resources/{}/versions".format(resource["itemId"])
 				request = urllib.request.Request(url="http://gta.intel.com/api/res-mngr/resources/{}/versions".format(resource["itemId"]), method="GET")
@@ -199,7 +214,14 @@ def load_file(file, credentials):
 					goldens = selectGoldens(artifact)
 				except NoGoldensResourceFound:
 					print(f"\tERROR: No goldens found for Resource:{resource['itemId']} Artifact:{artifact['itemId']} {artifact['name']}")
-					handleAttributes(stream, "no goldens resource", testItem, credentials)
+					#handleAttributes(stream, "no goldens resource", testItem, credentials)
+					continue
+
+				try:
+					trace = selectTrace(artifact)
+				except NoTraceResourceFound:
+					print(f"\tERROR: No trace found for Resource:{resource['itemId']} Artifact:{artifact['itemId']} {artifact['name']}")
+					#handleAttributes(stream, "no goldens resource", testItem, credentials)
 					continue
 
 				request = urllib.request.Request(url=f"http://gfx-assets.igk.intel.com/artifactory/{goldens['buildName']}", method="GET")
@@ -220,44 +242,29 @@ def load_file(file, credentials):
 				#urllib.request.Request(url=f"http://gfx-assets.igk.intel.com/artifactory/{goldens['buildName']}/{archiveName}",
 				#method="GET")
 				try:
-					artifactoryWebResponse = requests.get(url=f"http://gfx-assets.igk.intel.com/artifactory/{goldens['buildName']}/{archiveName}", stream=True) #urllib.request.urlopen(request)
+					goldensManifestWebResponse = requests.get(url=f"http://gfx-assets.igk.intel.com/artifactory/{goldens['buildName']}/manifest.json", stream=True) #urllib.request.urlopen(request)
+					traceManifestWebResponse = requests.get(url=f"http://gfx-assets.igk.intel.com/artifactory/{trace['buildName']}/manifest.json", stream=True) #urllib.request.urlopen(request)
 					#dataToWrite = artifactoryWebResponse.read()
 				except:
 					print(f"\tERROR: Couldn't connect with artifactory {goldens['repositoryPath']}")
 					continue
 
-				try:
-					with open(Path(f"Archives/{stream['name'].strip()}.zip"), "wb") as f:
-						for chunk in artifactoryWebResponse.iter_content(chunk_size = 500 * 1000 * 1024): #chunks 500MB
-							f.write(chunk)
-				except Exception as e:
-					print(f"\tERROR: Couldn't save file to disk!")
-					continue
+				goldensManifest = json.loads(goldensManifestWebResponse.text)
+				goldensSizeArchive = goldensManifest["archive"]["size"]
+				goldensSizeReal = 0
+				for file in goldensManifest["files"]:
+					goldensSizeReal += file["size"]
 
-				with zipfile.ZipFile(Path(f"Archives/{stream['name'].strip()}.zip"), 'r') as zip_ref:
-					zip_ref.extractall(Path(f"Archives/{stream['name'].strip()}"))
+				traceManifest = json.loads(traceManifestWebResponse.text)
+				traceSizeArchive = traceManifest["archive"]["size"]
+				traceSizeReal = 0
+				for file in traceManifest["files"]:
+					traceSizeReal += file["size"]
+				
+				GB = pow(2, 30)
+				global_results += f'[{global_counter}]\t{stream["name"]}\tTRACE\tArchive\t{traceSizeArchive}\tReal size\t{traceSizeReal}\t'
+				global_results += f'GOLDENS Archive\t{goldensSizeArchive}\tReal size\t{goldensSizeReal}{os.linesep}'
 
-				if os.path.exists(Path(f"Archives/{stream['name'].strip()}")):
-					os.remove(Path(f"Archives/{stream['name'].strip()}.zip"))
-				else:
-					print("\tERROR: Archives not unzipped!")
-					continue
-
-				try:
-					resolutions = getResolutions(Path(f"Archives/{stream['name'].strip()}"))
-				except NoResolutionFound:
-					print("\tERROR: Couldn't get resolutions from goldens!")
-					handleAttributes(stream, "no goldens", testItem, credentials)
-					continue
-
-				try:
-					shutil.rmtree(Path(f"Archives/{stream['name'].strip()}"))
-				except:
-					print("\tERROR: Deletion of unzipped goldens failed!")
-
-				handleAttributes(stream, resolutions, testItem, credentials)
-
-		print("--------END OF STREAM--------\n")			
 
 def inputCredentials():
 	login = input("Login: ")
@@ -269,9 +276,14 @@ def load_files(path):
 	credentials = inputCredentials()
 	files = os.listdir(Path(path))
 	global global_counter
+	global global_results
 	global_counter = -1
+	global_results = ""
 	for file in files:
 		load_file(Path(path ,file), credentials)
+
+	with open("results.txt", "w") as file:
+		file.write(global_results)
 
 
 archives = input("Streams location: ")
